@@ -1,16 +1,16 @@
 import logo from "./logo.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
+import Weather from "./Weather.js";
 
 function App() {
 	return (
 		<div className="App">
 			<div className="container">
-				<h1>Weather App</h1>
-
-				{/* <button className="btn btn-warning">Search</button> */}
+				<Weather />
 				<footer>
-					This was coded by <a href="#">Judy</a>{" "}
+					This project was coded by <a href="#">Judy</a> and is open-sourced on{" "}
+					<a href="#">Github</a>
 				</footer>
 			</div>
 		</div>
