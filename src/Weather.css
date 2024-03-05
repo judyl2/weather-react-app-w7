@@ -41,6 +41,7 @@
 	line-height: 68px;
 }
 
-.Weather .unit {
+.Weather .unit a {
 	font-size: 16px;
+	text-decoration: none;
 }
