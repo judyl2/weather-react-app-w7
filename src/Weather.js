@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo.js";
+import WeatherForecast from "./WeatherForecast.js";
 import "./Weather.css";
 
 export default function Weather(props) {
@@ -12,6 +13,7 @@ export default function Weather(props) {
 		setWeatherData({
 			ready: true,
 			city: response.data.city,
+			coordinates: response.data.coordinates,
 			date: new Date(response.data.time * 1000),
 			description: response.data.condition.description,
 			iconUrl: response.data.condition.icon_url,
@@ -25,7 +27,7 @@ export default function Weather(props) {
 		search();
 	}
 	function handleCityChange(event) {
-		// event.preventDefault();
+		event.preventDefault();
 		setCity(event.target.value);
 	}
 	function search() {
@@ -58,6 +60,10 @@ export default function Weather(props) {
 					</div>
 				</form>
 				<WeatherInfo data={weatherData} />
+				<WeatherForecast
+					data={weatherData}
+					coordinates={weatherData.coordinates}
+				/>
 			</div>
 		);
 	} else {

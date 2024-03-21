@@ -32,8 +32,8 @@
 	display: flex;
 	justify-content: left;
 }
-.Weather img {
-	height: 68px;
+.Weather .icon {
+	height: 72px;
 }
 .Weather .temperature {
 	font-size: 58px;

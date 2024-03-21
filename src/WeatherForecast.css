@@ -1,0 +1,10 @@
+.WeatherForecast {
+	text-align: center;
+}
+.wf-temp-min {
+	opacity: 0.6;
+	margin-left: 5px;
+}
+.wf-icon {
+	height: 48px;
+}
