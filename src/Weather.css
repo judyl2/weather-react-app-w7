@@ -1,13 +1,17 @@
+body {
+	background-color: #8188af;
+}
+
 .Weather {
 	border: 1px solid rgb(168, 161, 161);
 	border-radius: 5px;
 	color: rgb(90, 83, 83);
 	font-family: arial, sans-serif;
 	text-align: left;
-	padding: 16px;
-	margin: 30px auto;
+	padding: 36px;
+	margin: 52px auto;
 	max-width: 600px;
-	/* background-color: blue; */
+	background-color: white;
 }
 
 .Weather h1 {
